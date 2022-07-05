@@ -40,7 +40,7 @@ XT = transpose(X)
 Y = transpose([y])
 
 #solve for b (y = b0 + b1*x + b2*x^2 + b3*x^3 + ... )
-b = np.dot(np.dot(inv(np.dot(XT,X)),XT),y) 
+b = np.dot(np.dot(inv(np.dot(XT,X)),XT),Y) 
 
 ##########################################################################################
 #-------Create 100 x and y values for the regression curve, so that we can display it ----
